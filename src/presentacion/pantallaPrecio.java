@@ -41,7 +41,7 @@ public class pantallaPrecio extends javax.swing.JFrame {
         setBackground(new java.awt.Color(255, 255, 255));
         setExtendedState(MAXIMIZED_BOTH);
         setForeground(java.awt.Color.white);
-        setUndecorated(false);
+        setUndecorated(true);
 
         panel3.setColorPrimario(new java.awt.Color(255, 255, 255));
         panel3.setColorSecundario(new java.awt.Color(255, 255, 255));

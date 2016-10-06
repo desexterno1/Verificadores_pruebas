@@ -13,7 +13,7 @@
       <Color blue="ff" green="ff" id="white" palette="1" red="ff" type="palette"/>
     </Property>
     <Property name="undecorated" type="boolean" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
-      <Connection code="false" type="code"/>
+      <Connection code="true" type="code"/>
     </Property>
   </Properties>
   <SyntheticProperties>
