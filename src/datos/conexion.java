@@ -3,6 +3,7 @@ package datos;
 import java.sql.*;
 import java.io.*;
 import java.util.Properties;
+import java.sql.PreparedStatement;
 
 /**
  *
@@ -95,7 +96,7 @@ public class conexion {
                 }
             }
             cmd.execute();
-            con.close();
+           
             return true;
         } catch (SQLException e) {
             err = ("Error al ejecutar sp" + e.toString());
@@ -119,7 +120,7 @@ public class conexion {
         ResultSet rs = null;
         Conexion();
          int cont = 1;
-        CallableStatement cmd = con.prepareCall("{" + sp + "}");
+        PreparedStatement cmd = con.prepareStatement(sp);
           for (int i = 0; i < valores.length; i++) {
                 if ("s".equals(tipoValor[i].toLowerCase())) {
                     cmd.setString(cont, (String) valores[i]);
@@ -134,7 +135,8 @@ public class conexion {
         }catch(SQLException e){
         err = ("Error al ejecutar sp " + e.toString());
         }
-        con.close();
+        
         return rs;
+        
     }
 }

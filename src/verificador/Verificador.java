@@ -5,7 +5,8 @@
  */
 package verificador;
 
-import java.sql.SQLException;
+import java.io.IOException;
+import presentacion.pantallaFolletos;
 
 /**
  *
@@ -16,12 +17,27 @@ public class Verificador {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws IOException  {
         // TODO code application logic here
+
+       new pantallaFolletos().setVisible(true);
+       
+        
+    }}
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
        
-       new presentacion.pantallaPrecio().setVisible(true);
         
-    }
     
-}
+    
+
